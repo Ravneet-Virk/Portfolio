@@ -1,0 +1,78 @@
+.skill-row {
+    width: 85%;
+    margin: auto;
+
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+/* .col {
+    border: 1px solid red;
+} */
+
+.skill-col-2 {
+    flex-grow: 1;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-box {
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.col-25{
+    width: 25%;
+    text-align: right;
+}
+.col-25 p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.col-75{
+    width: 75%;
+}
+.col-75 img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* --------- Media Query --------- */
+
+@media (max-width:900px){
+    .skill-col-1 h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        /* text-align: center; */
+        /* display: none; */
+    }
+    .col-25 p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .skill-row{
+        flex-direction: column;
+    }
+    .skill-box{
+        flex-direction: column;
+        margin-bottom: .5rem;
+    }
+    .col-25{
+        width: 100%;
+        text-align: start;
+        
+        /* border: 1px solid red; */
+    }
+    .col-75{
+        width: 100%;
+    }
+    .skill-col-2{
+        padding: .4rem;
+    }
+}
